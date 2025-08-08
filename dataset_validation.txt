@@ -1,0 +1,72 @@
+=== Dataset Basic Info ===
+Rows: 2870, Columns: 29
+Date range: 2020-02-05 00:00:00 to 2025-07-30 00:00:00
+Columns: date, symbol, open, high, low, close, usd_volume, btc_volume, v_7d, v_14d, v_21d, v_28d, v_42d, log_return, momentum_14, volatility_14, momentum_21, volatility_21, momentum_28, volatility_28, momentum_42, volatility_42, momentum_90, volatility_90, strev_daily, return, strev_weekly, avg_sentiment, news_count
+
+=== Missing Values ===
+date               0
+symbol             0
+open               0
+high               0
+low                0
+close              0
+usd_volume        72
+btc_volume         0
+v_7d              82
+v_14d             92
+v_21d            102
+v_28d            112
+v_42d            132
+log_return        72
+momentum_14      102
+volatility_14     92
+momentum_21      112
+volatility_21    102
+momentum_28      122
+volatility_28    112
+momentum_42      142
+volatility_42    132
+momentum_90      212
+volatility_90    202
+strev_daily       72
+return            82
+strev_weekly      82
+avg_sentiment      0
+news_count         0
+dtype: int64
+
+=== NaN Ratio in Key Columns ===
+return: 2.86% NaN
+avg_sentiment: 0.00% NaN
+news_count: 0.00% NaN
+
+=== Descriptive Statistics ===
+                                date           open  ...  avg_sentiment   news_count
+count                           2870    2870.000000  ...    2870.000000  2870.000000
+mean   2022-11-02 00:00:00.000000256    4587.941460  ...       0.001916     0.045296
+min              2020-02-05 00:00:00       0.000000  ...       0.000000     0.000000
+25%              2021-06-16 00:00:00       0.278875  ...       0.000000     0.000000
+50%              2022-11-02 00:00:00       7.329000  ...       0.000000     0.000000
+75%              2024-03-20 00:00:00     295.992500  ...       0.000000     0.000000
+max              2025-07-30 00:00:00  120023.500000  ...       0.050000     2.000000
+std                              NaN   15634.694636  ...       0.009601     0.239169
+
+[8 rows x 28 columns]
+
+=== Date Continuity Check ===
+Missing dates: 1716
+DatetimeIndex(['2020-02-06', '2020-02-07', '2020-02-08', '2020-02-09',
+               '2020-02-10', '2020-02-11', '2020-02-13', '2020-02-14',
+               '2020-02-15', '2020-02-16'],
+              dtype='datetime64[ns]', freq=None)
+
+=== Abnormal Return Values (> +/- 50%) ===
+Found 50 abnormal return rows.
+          date symbol     open  ...  strev_weekly  avg_sentiment  news_count
+17  2020-06-03    ADA  0.07869  ...      0.550290            0.0         0.0
+48  2021-01-06    ADA  0.25950  ...      0.817292            0.0         0.0
+53  2021-02-10    ADA  0.70660  ...      1.125056            0.0         0.0
+201 2023-12-13    ADA  0.57830  ...      0.507227            0.0         0.0
+249 2024-11-13    ADA  0.57160  ...      0.593724            0.0         0.0
+
+[5 rows x 29 columns]

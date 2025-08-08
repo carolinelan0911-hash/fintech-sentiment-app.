@@ -1,0 +1,12 @@
+// Text Processing Pipeline
+digraph {
+	A [label="Stage 1: HTML Cleaning"]
+	B [label="Stage 2: Tokenization"]
+	C [label="Stage 3: Stopword Removal"]
+	D [label="Stage 4: VADER Sentiment Score"]
+	E [label="Stage 5: Integration"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+}

@@ -1,0 +1,28 @@
+Key Dataset Validation Results:
+Rows: 2870, Columns: 29
+Date range: 2020-02-05 00:00:00 to 2025-07-30 00:00:00
+Missing Values:
+usd_volume        72
+v_7d              82
+v_14d             92
+v_21d            102
+v_28d            112
+v_42d            132
+log_return        72
+momentum_14      102
+volatility_14     92
+momentum_21      112
+volatility_21    102
+momentum_28      122
+volatility_28    112
+momentum_42      142
+volatility_42    132
+momentum_90      212
+volatility_90    202
+strev_daily       72
+return            82
+strev_weekly      82
+dtype: int64
+NaN Ratio (return): 2.86%
+NaN Ratio (avg_sentiment): 0.00%
+Missing Dates Count: 1716
