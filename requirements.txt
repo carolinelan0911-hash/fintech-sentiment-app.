@@ -1,0 +1,15 @@
+@'
+streamlit>=1.34.0
+pandas>=2.2.2
+numpy>=1.26.4
+google-generativeai>=0.3.2
+python-dotenv>=1.0.1
+'@ | Out-File -Encoding utf8 requirements.txt
+
+
+git init
+git remote add origin https://github.com/carolinelan0911-hash/fintech-sentiment-app.git
+git add .
+git commit -m "Initial commit for Streamlit deployment"
+git branch -M main
+git push -u origin main
